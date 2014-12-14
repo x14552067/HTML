@@ -1,0 +1,342 @@
+########## DONE ######### Fix bottom div ########## DONE #########
+
+########## DONE ######### Fix main slider with actual content ########## DONE #########
+
+########## DONE ######### Implement the social media buttons and make them highlight on hover ########## DONE #########
+
+########## DONE ######### Make buttons highlight on hover ########## DONE ######### 
+
+########## DONE ######### href for all the pages + make the .html files for the pages ########## DONE ######### 
+
+########## DONE ######### Add Google maps pin and details ########## DONE #########
+
+########## DONE ######### Re do Index ########## DONE ######### 
+
+########## DONE ######### Long index ########## DONE #########
+
+########## DONE ######### Margin 30px / 110 either side ########## DONE #########
+
+########## DONE ######### put on hover red border + opacity on pictures ########## DONE #########
+
+########## DONE ######### Add in a konami code kappa ########## DONE #########
+
+########## DONE ######### Do Gallery Page  ########## DONE #########
+
+### IN PROGRESS ### Do the about page  ### IN PROGRESS ###
+
+### IN PROGRESS ### Do the contact page ### IN PROGRESS ###
+
+
+
+
+
+####################### MAIN   ###################################
+
+
+Social media icons
+
+
+
+
+
+
+
+
+###################### TUNE UP #####################################
+
+add <a> to the bottom slide out imgs
+
+
+
+
+
+red brick colour on the bot is #a73939
+
+that green text font is #08f376
+
+Put the overlay on slider for gallery
+
+
+
+Use a Main tag aswell as NAV for the navbar
+
+header tag?
+
+ALT tags
+
+Make font size bigger
+
+################################################
+
+
+
+
+
+
+*********************************************************** # # # SET UP GITHUB # # # *********************************************************************
+
+
+
+
+#################	FEEDBACK	########################
+
+Font Size
+
+Konami Code
+
+Pin on maps
+
+
+
+
+##################################################################################################################################################################
+											BY 8 O CLOCK TODAY
+												BE FINISHED
+												
+	
+	
+	Fill content on the slide down divs on pictures
+	
+	Alt tags for everything
+	
+	Social media
+	
+	Bottom div with copyright etc
+	
+	
+	Add content to index slider
+	
+	finish up contact page
+	
+	do media querys
+	
+	validate
+	
+	github + deploy
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid">
+		<div class="row">
+			<div id="slideoutDiv" class="col-md-12">
+				<div id="slideoutContainer">
+					<img id ="dropButton" src="button.png" alt="Clickable arrow leading to more info">
+		
+		
+				<div id="botLeftDiv">
+						
+					<div class="chooseStyleHidden">
+							<p><span class="styleTextHidden"> Choose your preferred style <span></p>
+					</div>
+						
+					
+					<div>  
+						<img src="medieval.png" class="bottomPics" alt="A picture denoting Medieval content below">
+					</div>
+					
+					<div id="medieval">
+						<div class="leftPad"> </div>
+							<div class="rightPad"> </div>
+						
+						<h1 class="bottomh1">Medieval</h1>
+						<span class="bottomText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus diam vel nunc tempus lacinia. Duis eget posuere erat, non varius dolor. Cras feugiat vehicula purus, eget accumsan dolor vestibulum finibus. Ut a quam aliquet, dapibus elit venenatis, dapibus arcu. Donec et malesuada tortor, id pretium odio. Sed pharetra lobortis tortor eget vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis augue orci, luctus eu lacinia non, ultricies ullamcorper dui.</p>
+						<p>Maecenas suscipit neque vitae magna pretium tincidunt. Ut sem odio, luctus a feugiat a, hendrerit eget mauris. Proin accumsan volutpat neque et placerat. Vivamus semper, nibh non posuere bibendum, dui leo interdum dui, vel gravida libero urna in sapien. Mauris posuere sollicitudin consectetur. Sed pretium odio ornare erat mollis, at eleifend sem elementum. Cras posuere elit at lobortis auctor.Suspendisse fermentum nisi tortor, quis placerat urna volutpat a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></span>	
+				
+					</div>
+
+				</div>
+					
+				<div id="botInsideDiv">
+					
+					<div id="chooseStyle">
+						<p><span id="styleText"> Choose your preferred style <span></p>
+					</div>
+						
+					<div>
+						<img src="rene.png" class="bottomPics" alt="A picture denoting Renaissance content below">
+					</div>
+						
+					
+					<div id="renaissance">
+					<div class="leftPad"> </div>
+					<div class="rightPad"> </div>
+							
+						<h1 class="bottomh1">Renaissance</h1>
+						<span class="bottomText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus diam vel nunc tempus lacinia. Duis eget posuere erat, non varius dolor. Cras feugiat vehicula purus, eget accumsan dolor vestibulum finibus. Ut a quam aliquet, dapibus elit venenatis, dapibus arcu. Donec et malesuada tortor, id pretium odio. Sed pharetra lobortis tortor eget vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis augue orci, luctus eu lacinia non, ultricies ullamcorper dui.</p>
+						<p>Maecenas suscipit neque vitae magna pretium tincidunt. Ut sem odio, luctus a feugiat a, hendrerit eget mauris. Proin accumsan volutpat neque et placerat. Vivamus semper, nibh non posuere bibendum, dui leo interdum dui, vel gravida libero urna in sapien. Mauris posuere sollicitudin consectetur. Sed pretium odio ornare erat mollis, at eleifend sem elementum. Cras posuere elit at lobortis auctor.Suspendisse fermentum nisi tortor, quis placerat urna volutpat a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></span>	
+				
+					</div>
+					
+				</div>
+					
+				<div id="botRightDiv">
+					<div class="chooseStyleHidden">
+						<p><span class="styleTextHidden"> Choose your preferred style <span></p>
+					</div>
+
+					<div>
+						<img src="modern.png" class="bottomPics" alt="A picture denoting Modern content below">
+					</div>
+						
+				
+				
+					<div id="modern">
+						<div class="leftPad"> </div>
+						<div class="rightPad"> </div>
+								
+					<h1 class="bottomh1">Modern</h1>
+					<span class="bottomText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus diam vel nunc tempus lacinia. Duis eget posuere erat, non varius dolor. Cras feugiat vehicula purus, eget accumsan dolor vestibulum finibus. Ut a quam aliquet, dapibus elit venenatis, dapibus arcu. Donec et malesuada tortor, id pretium odio. Sed pharetra lobortis tortor eget vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis augue orci, luctus eu lacinia non, ultricies ullamcorper dui.</p>
+					<p>Maecenas suscipit neque vitae magna pretium tincidunt. Ut sem odio, luctus a feugiat a, hendrerit eget mauris. Proin accumsan volutpat neque et placerat. Vivamus semper, nibh non posuere bibendum, dui leo interdum dui, vel gravida libero urna in sapien. Mauris posuere sollicitudin consectetur. Sed pretium odio ornare erat mollis, at eleifend sem elementum. Cras posuere elit at lobortis auctor.Suspendisse fermentum nisi tortor, quis placerat urna volutpat a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></span>	
+				
+		
+				
+				
+				
+					</div>	
+				</div>	
+	
+<div class="container-fluid">
+		<div class="row">
+					
+			<div class="col-md-12" id="socialMedia">
+				<div class="socialImg"> <img src="img/iconsBw/fbi.png" id="fbi" alt="Social media Icon" onmouseover="this.src='img/iconscol/fbci.png'" onmouseout="this.src='img/iconsBw/fbi.png'"> </div>
+				<div class="socialImg"> <img src="img/iconsBw/gpi.png" id="gpi" alt="Social media Icon" onmouseover="this.src='img/iconscol/gpci.png'" onmouseout="this.src='img/iconsBw/gpi.png'"> </div>
+				<div class="socialImg"> <img src="img/iconsBw/rssi.png" id="rssi" alt="Social media Icon" onmouseover="this.src='img/iconscol/rssci.png'" onmouseout="this.src='img/iconsBw/rssi.png'"> </div>
+				<div class="socialImg"> <img src="img/iconsBw/ti.png" id="ti" alt="Social media Icon" onmouseover="this.src='img/iconscol/tci.png'" onmouseout="this.src='img/iconsBw/ti.png'"> </div>
+				<div class="socialImg"> <img src="img/iconsBw/yti.png" id="yti" alt="Social media Icon" onmouseover="this.src='img/iconscol/ytci.png'" onmouseout="this.src='img/iconsBw/yti.png'"> </div>
+		
+			</div>
+		</div>   
+	</div>
+
+				
+				
+			</div>
+		</div>		
+	</div>
+</div>
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+copy of original nav bar
+
+
+
+
+	<br>
+	<br>
+	
+  <div class="container">
+	<div class="row">
+		<div id="navOne" class="col-md-5">
+		
+		<ul> 
+		<li id="home"> <a href="index.html">Home </a></li>
+		<li id="gallery"> <a href="gallery.html"> Gallery </a></li>
+		<li id="artists"> <a href="artists.html">Artists </a></li>
+		</ul>
+		
+		</div>
+		
+		<div id="logoDiv" class="col-md-2">
+		<img src="logo.png" id="logoImg" class="img-responsive">
+		</div>
+		
+		<div id="navThree" class="col-md-5">
+		<ul> 
+		<li id="history"><a href="history.html"> History </a> </li>
+		<li id="contact"><a href="contact.html"> Contact</a> </li>
+		<li id="about"><a href="about.html"> About </a> </li>		
+		</ul> 
+		</div>
+	</div>
+</div>

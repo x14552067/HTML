@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dreamagine Gallery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- ############### Slideout Div at bottom ####################### -->
+		 <script type="text/javascript" src="js/kappa.js"></script>
+		 
+	<!-- ################################################################ -->
+	<!-- ############### On hover JavaScript ############################ -->
+	<script type="text/javascript" src="js/hovereffect.js"></script>
+	
+	<!-- ################################################################ -->
+	<!-- ################################################################ -->
+	
+	<link rel="stylesheet" href="css/arthref.css">
+
+
+	<!-- ################################################################ -->
+	<!-- ################################################################ -->
+
+	
+
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(53.3489, -6.2432);
+  var mapOptions = {
+    zoom: 18,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Kappa Artistic Gallery</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Kappa Artistic Gallery</b>, also referred to as <b>Kappa</b>, is a large ' +
+      'Lorem ipsum dolor sit amet, his sanctus persecuti ei'+
+      'An audiam commodo his, esse conceptam te nec, eum graeci delicata tractatos ex.'+
+      'His tation epicurei te, mea admodum expetendis at. Cu simul essent laboramus sed, ex usu option cotidieque.'+
+      'Corpora accusamus voluptatibus quo ea, fierent mediocrem omittantur mea id.'+
+      'Sonet discere maiestatis nec cu, pro ad inani virtute'+
+      'ne mel percipit convenire maluisset. Usu amet dicit scribentur an, simul mentitum periculis his at.'+
+      'Utinam delicata sit no, eum at consetetur adversarium'+
+      ' Verear dissentias te mei, ad est percipit ocurreret similique, '+
+      ' te mentitum volutpat incorrupte usu. </p>'+
+      '<p>quidam ponderum eloquentiam. Commodo'+
+      '(last visited KappaThousandAndFourteen).</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+  </head>
+  <body>
+
+  
+  
+  
+  
+  <div class="container-fluid">
+	<div class="row">
+		<div id="navOne" class="col-md-12">
+		<!-- <div id="topPad"> </div> -->
+		<div><p id="dream">Dreamagine ★</p>	</div>
+		<ul> 		
+		
+		<li id="about"><a href="about.html"><span class="textCol">About </span></a> </li>		
+		<li id="contact"><a href="contact.html"><span class="textCol"> Contact </span></a> </li>
+		<li id="gallery"> <a href="gallery.html"><span class="textCol"> Gallery </span></a></li>	
+		<li id="home"> <a href="index.html"><span class="textCol">Home </span></a></li>
+		</ul> 
+		</div>
+	</div>
+</div>
+	
+		<script>
+	
+		var konamiCodeArray = [],
+			konamiCodeKey = '38,38,40,40,37,39,37,39,66,65';
+		$(document).keydown(function(e) {
+			konamiCodeArray.push(e.keyCode);
+			if (konamiCodeArray.toString().indexOf(konamiCodeKey) >= 0) {
+				$('#konami').fadeToggle(300);
+				konamiCodeArray = [];
+			}
+		});
+	
+	</script>
+	
+	<div id="konami" style="display:none; height: 900px; width:100%;">
+	<div id="konamiKappaCont">
+	<img src="img/artists/samkappa.png" id="konamiKappa" style="float:left;" alt="KAPPPPPAAAAAAAAAAAAAAA">
+	</div>
+	<div id="konamiText" style="float:left; margin-top:100px; height:100%; width:300px;">
+	<p style="font-size:100px; color:white;"> Twitter bootstrap ducking SUCKS </p>
+	</div>
+	</div>
+	
+	
+	
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div id="contactKappa" class="col-md-12">
+			<h1 id="kappah1">Contact Kappa Gallery</h1>
+		</div>
+	</div>
+</div>
+<br />
+		
+
+	<div class="container">
+		<div class="row">
+			<div id="topContact" class="col-md-12">
+				<ul>
+				<li>
+					<li id="mobilecontact"><img src="img/contact/contacti.png" alt="A image / button for contacting us by mobile"> </li>
+					<li id="messagecontact"><img src="img/contact/messagei.png" alt="A image / button for contacting us by mobile"> </li>
+					<li id="twittercontact"><img src="img/contact/twitteri.png" alt="A image / button for contacting us by mobile"> </li>
+					<li id="skypecontact"><img src="img/contact/skypei.png" alt="A image / button for contacting us by mobile"> </li>
+					<li id="plancontact"><img src="img/contact/plani.png" alt="A image / button for contacting us by mobile"> </li>
+				</ul>
+			</div>
+		</div> 
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				 <h1><span id="findMap"> Find us on Maps!</span></h1> 
+			
+				<div id="map-canvas" style="width:70%;100%"></div>
+			
+			</div>
+		</div>
+	</div>
+
+
+
+
+<div class="container">
+		<div class="row">
+			<div id="spacemaker" class="col-md-12">
+			</div>
+		</div>
+</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+					
+			
+			
+			
+		</div>   
+	</div>
+
+
+
+  </body>
+</html>

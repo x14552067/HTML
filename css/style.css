@@ -1,0 +1,905 @@
+body {
+background-color:black;
+margin: 0px;
+padding: 0px;
+/* cursor:url('http://www.rw-designer.com/cursor-view/15356.png'),default; */
+margin-left:110px;
+margin-right:110px;
+overflow:hidden;
+
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(HelveticaNeue.otf);
+}
+
+h1{
+font-family: HelveticaNeue !important;
+    src: url(HelveticaNeue.otf);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+	color:black !important;
+    text-decoration: none !important;
+    display: inline-block;
+    border-bottom: 2px solid white;    
+    margin-right: 39px; 
+    width: 0px;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+
+a:hover {
+    color:black !important;
+	text-decoration: none !important;
+	-webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+    border-bottom: 2px solid white;
+    width: 120px;
+    margin-right: 9px;
+}
+
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+
+.row{
+margin-left:0px !important;
+}
+
+p{
+font-size:18px;
+}
+
+/* ################################################################### */
+/* 					CSS for the slider we use 							*/
+
+
+ .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av{
+background: url(../img/b21.png) no-repeat;
+overflow:hidden;
+cursor: pointer;
+}
+.jssorb21 div { background-position: -5px -5px; }
+.jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+.jssorb21 .av { background-position: -65px -5px; }
+.jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn{
+position: absolute;
+cursor: pointer;
+display: block;
+background: url(../img/a21.png) center center no-repeat;
+overflow: hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21ldn { background-position: -243px -33px; }
+.jssora21rdn { background-position: -303px -33px; }
+
+/* ################################################################### */
+/* ###################    Navigation Bar       ####################### */
+
+#topPad{
+height:40px;
+}
+
+#navOne{
+height:80px;
+padding:0px;
+}
+
+#navThree{
+}
+
+#home, #gallery, #artists, #history, #contact, #about, #navThree{
+height:40px;
+font-size:23px;
+}
+
+.textCol{
+display:block;
+color:white;
+text-align:center !important;
+margin-top:40px;
+}
+
+#home, #gallery, #contact, #about{
+width:10%; 
+padding-top: 5px;
+float:right;
+}
+
+
+#dream{
+float:left;
+width:20%; 
+padding-top: 10px;
+font-size:40px;
+padding-top: 30px;
+}
+
+#dream{
+font-weight:bold;
+font-size:40px !important;
+background:url("../img/dream/dream3.jpg");
+-webkit-background-clip:text;
+-webkit-background-size:cover;
+-webkit-text-fill-color:transparent;
+-webkit-animation: 35s infinite linear animate;
+}
+@-webkit-keyframes animate{
+0% {background-position:0;}
+100% {background-position:-1000px 0;}
+}
+
+
+#home{
+
+margin: 0 auto; 
+}
+
+#gallery{
+margin: 0 auto;
+}
+
+
+#contact{
+margin: 0 auto;
+}
+
+
+#about{
+margin: 0 auto;
+}
+
+/*####################################################################### */
+/*###################    Bottom Slideout Div - Index     ################ */
+
+#botStyle{
+float:left;
+}
+
+#slideoutDiv{
+margin:0 auto;
+width:100%;
+padding-right:15px !important;
+}
+
+#slideoutContainer{
+width:100%;
+height:700px;
+}
+
+#dropButton{
+margin: 0 auto;
+display: block;
+margin-top:20px;
+}
+
+
+#dropButton:hover{
+cursor:pointer;
+}
+
+
+#leftSlideout, #midSlideout, #rightSlideout, #slideoutContainer{
+display:none;
+}
+
+#leftSlideout{
+height:700px;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#midSlideout{
+height:700px;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#rightSlideout{
+height:700px;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+#horsie{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+#fantasy{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+#sciFi{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+#styleText{
+display:block;
+color:white;
+font-size:30px;
+text-align: center;
+font-style:underline;
+}
+
+.styleTextHidden{
+visibility: hidden;
+color:white;
+font-size:30px;
+text-align: center;
+font-style:underline;
+font-family: HelveticaNeue;
+}
+
+
+.bottomPics{
+opacity:0.9;
+display: block;
+margin-left: auto ;
+margin-right: auto ;
+}
+
+.bottomText{
+color:white;
+text-align: justify;
+}
+
+.leftPad{
+height:600px;
+width:30px;
+float:left;
+}
+
+.rightPad{
+height:600px;
+width:30px;
+float:right;
+}
+
+/*####################################################################### */
+/*###############   Middle pictures - Index  	  ####################### */
+
+
+
+#imgRowOneL{
+padding:0px;
+margin:0px;
+height:700px;
+width:849px;
+padding:0px;
+margin:0px !important;
+}
+
+#pic1{
+height:700px;
+width:849px;
+padding:0px;
+background-image: url(../img/index/traveller2.jpeg);
+background-repeat: no-repeat;
+background-position: top right; 
+margin:0px !important;
+}
+
+#hoverBox1, #hoverBox2, #hoverBox3, #hoverBox4, #hoverBox5, #hoverBox6, #hoverBox7, #hoverBox8, #hoverBox9, #hoverBox10{
+display:none;
+width:100%;
+height:100%;
+padding:0px;
+margin-left:10px;
+margin:0 auto;
+background-color:#dd5e4a;
+opacity:0.8;
+
+}
+
+#imgRowOneR{
+height:700px;
+width:850px;
+float:left;
+padding:0px;
+margin:0px;
+}
+
+#topL1{
+float:left;
+background-image: url(../img/index/city.jpg);
+
+}
+
+#topR1{
+float:right;
+background-image: url(../img/index/hopes.jpg);
+}
+
+#botL1{
+background-image: url(../img/index/grill.jpg);
+float:left;
+}
+
+#botR1{
+float:right;
+background-image: url(../img/index/grill2.jpg);
+}
+
+#topL1, #topR1, #botL1, #botR1{
+width:50%;
+height:350px;
+}
+
+#imgRowTwoL{
+padding:0px;
+float:left;
+margin:0px;
+height: 700px;
+width: 850px;
+}
+
+#imgRowTwoR{
+height:700px;
+width:850px;
+float:left;
+padding:0px !important;
+margin:0px;
+}
+
+#pic2{
+height:700px;
+width:849px;
+padding:0px;
+background-image: url(../img/index/mess2.jpg);
+background-repeat: no-repeat;
+background-position: top right; 
+float:left;
+}
+
+#topL2{
+float:left;
+background-image: url(../img/index/planet.jpg);
+}
+
+#topR2{
+float:right;
+background-image: url(../img/index/steampunk.jpg);
+}
+
+#botL2{
+background-image: url(../img/index/city2.jpg);
+float:left;
+}
+
+#botR2{
+float:right;
+background-image: url(../img/index/city3.jpg);
+}
+
+#topL2, #topR2, #botL2, #botR2{
+width:50%;
+height:350px;
+}
+
+.indexDescTitle{
+text-align:center;
+color:white;
+margin:0px;
+padding:0px;
+padding-top:20%;
+}
+.indexDesc{
+text-align:center;
+color:white;
+margin:0px;
+padding:0px;
+font-size:20px;
+}
+/*####################################################################### */
+/*####################################################################### */
+/*###################     Bottom Bar Div       ########################## */
+
+
+#bottomBar{
+width:100%;
+background-color:gray;
+height:50px;
+display:block;
+}
+
+.bottomh1{
+padding-bottom:10px;
+text-align:center;
+color:white;
+font-weight:bold;
+}
+
+
+
+
+/*###################################################################### */
+/*###################     Social Media        ########################## */
+
+
+.socialImg{
+float:right;
+padding-left:0px;
+padding-right:5px;
+}
+
+/*
+p.demo{ text-align: center; }
+.shareSelector{ font-size: 25px; color: #f00; }
+
+.btn{ padding: 19px 35px; color: #fff; text-shadow: 0 3px 5px rgba(0,0,0,.6); box-shadow: 0 2px 5px #000; font-size: 19px; display: inline-block; border-radius: 8px;
+background: rgb(170,41,41);
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhMjkyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NjA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(170,41,41,1) 0%, rgba(134,4,4,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,41,41,1)), color-stop(100%,rgba(134,4,4,1)));
+background: -webkit-linear-gradient(top,  rgba(170,41,41,1) 0%,rgba(134,4,4,1) 100%);
+background: -o-linear-gradient(top,  rgba(170,41,41,1) 0%,rgba(134,4,4,1) 100%);
+background: -ms-linear-gradient(top,  rgba(170,41,41,1) 0%,rgba(134,4,4,1) 100%);
+background: linear-gradient(to bottom,  rgba(170,41,41,1) 0%,rgba(134,4,4,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa2929', endColorstr='#860404',GradientType=0 ); }
+
+*/
+
+#socialLinks{
+float:right;
+-moz-transition: none;
+-webkit-transition: none;
+-o-transition: color 0 ease-in;
+transition: none;
+text-decoration: none;
+margin:0px;
+padding:0px;
+width:150px;
+height:150px;
+}
+
+#socialLinks:hover{
+-moz-transition: none;
+-webkit-transition: none;
+-o-transition: color 0 ease-in;
+transition: none;
+text-decoration: none;
+margin:0px;
+padding:0px;
+border-bottom: 0px solid white;
+   
+}
+
+#socialBtn{
+width:150px;
+height:150px;
+background-image: url('../img/social/hearte.png');
+display:block;
+margin: 0 auto;
+}
+
+#socialBtn:hover{
+background-image: url('../img/social/heartf.png');
+-webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+
+
+#socialLeft, #socialRight{
+height:100%;
+width:50%;
+margin:0px !important;
+padding:0px !important;
+opacity:0.7;
+}
+
+#socialMedia{
+margin:0px !important;
+padding:0px !important;
+}
+
+#socialLeft{
+float:left;
+width:842px;
+height:60px;
+background-image: url('../img/social/left.png');
+}
+
+#socialRight{
+float:right;
+width:842px;
+height:60px;
+background-image: url('../img/social/right.png');
+}
+
+#likeSite{
+width:100%;
+height:220px;
+background-image: url('../img/index/boxbg.png');
+border-style:solid;
+}
+
+#wantSum{
+margin:0px;
+color:white;
+text-align:center;
+}
+
+
+/*####################################################################### */
+/*###################     About Page Style       ######################## */
+
+
+#solaire{
+position:fixed;
+width:100%;
+z-index:-1;
+}
+
+#test{
+height:2000;
+
+}
+
+#map-canvas {
+width: 500px;
+height: 400px;
+}
+
+#socialMedia{
+width:100%;
+background-color:gray;
+height:60px;
+
+
+}
+
+#aboutLeft{
+height:300px;
+width: 70%;
+background-color:gray;
+float:right;
+margin-right:50px;
+margin-top:30px;
+}
+
+#aboutRight{
+height:300px;
+width: 70%;
+background-color:gray;
+float:left;
+margin-left:50px;
+margin-top:30px;
+}
+
+#aboutUs{
+height:450px;
+width:100%;
+background-color:black;
+
+}
+
+#aboutTitle{
+padding-top:20px;
+margin-top:20px;
+}
+
+.galleryImg{
+width:100%;
+height:100%;
+border-style:solid;
+border-width: 3px;
+border-color: white;
+}
+
+#aboutLPad{
+height:100%;
+width:150px;
+float:left;
+}
+
+#aboutRPad{
+height:100%;
+width:150px;
+float:right;
+
+}
+
+/*####################################################################### */
+/*###################     Contact Page Style       ###################### */
+
+
+#mobilecontact, #messagecontact, #skypecontact, #plancontact, #twittercontact{
+padding-left:5px;
+padding-right:5px;
+}
+
+
+#mobilecontact:hover, #messagecontact:hover, #skypecontact:hover, #plancontact:hover, #twittercontact:hover{
+cursor:pointer;
+}
+
+#topContact{
+
+background:black;
+height:250px;
+display:block;
+margin:0 auto;
+
+}
+
+#mobilecontact{
+
+float:left;
+
+}
+
+#messagecontact{
+
+float:left;
+
+}
+
+#skypecontact{
+
+float:left;
+
+}
+
+#plancontact{
+
+float:left;
+
+}
+
+#twittercontact{
+
+float:left;
+
+}
+
+
+#contactKappa{
+
+background:black;
+height:50px;
+display:block;
+margin:0 auto;
+
+}
+
+#kappah1{
+
+margin:0 auto;
+display:block;
+text-align:center;
+color:white;
+
+}
+
+#map-canvas{
+padding-top:25px;
+margin: 0 auto;
+border:solid 5px;
+border-color: white;
+}
+
+#spacemaker{
+height:40px;
+background:black;
+}
+
+#findMap{
+display:block;
+padding-bottom:10px;
+text-align:center;
+color:white;
+opacity:0.5;
+}
+/*
+#map-canvas{
+width:600px;
+}
+*/
+
+
+
+
+/*####################################################################### */
+/*###################     Gallery Page Style       ###################### */
+
+#artistOne, #artistTwo, #artistThree, #artistFour, #artistFive, #artistSix, #artistSeven, #artistEight{
+border-style:solid;
+border-width:1px;
+border-color:white;
+height:400px;
+width:380px;
+background-color:gray;
+margin-left:18px;
+margin-right:20px;
+margin-top:50px;
+padding:0px;
+}
+
+
+#artistOne{
+background-image: url('../img/artists/artists1.png');
+}
+
+
+#artistTwo{
+background-image: url('../img/artists/artists2.png');
+}
+
+
+#artistThree{
+background-image: url('../img/artists/artists3.png');
+}
+
+
+#artistFour{
+background-image: url('../img/artists/artists4.png');
+}
+
+#artistFive{
+background-image: url('../img/artists/artists5.png');
+}
+
+#artistSix{
+background-image: url('../img/artists/artists6.png');
+}
+
+#artistSeven{
+background-image: url('../img/artists/artists7.png');
+}
+
+#artistEight{
+background-image: url('../img/artists/nikopage.png');
+}
+
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10{
+border-style:solid;
+border-width:3px;
+border-color:white;
+display:none;
+width:100%;
+height:100%;
+padding:0px;
+margin-left:10px;
+margin:0 auto;
+background-color:#3a709e;
+opacity:0.8;
+}
+
+.artistType{
+width:200px;
+height:150px;
+display:block;
+margin:0 auto;
+}
+
+
+.artistText{
+text-align:center;
+color:white;
+}
+
+
+
+#a2{
+
+}
+
+
+#a3{
+
+}
+
+
+#a4{
+
+}
+
+
+#a5{
+
+}
+
+
+#a6{
+
+}
+
+
+#a7{
+
+}
+
+
+#a8{
+
+}
+
+
+#a9{
+
+}
+
+
+#a10{
+
+}
+
+
+/* Cant say we didnt try LOL kappa */
+@media only screen and (max-width : 320px) {
+
+body{
+padding:0px;
+margin:0px;
+}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

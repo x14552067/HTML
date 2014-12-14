@@ -1,0 +1,503 @@
+body {
+background-color:black;
+margin: 0px;
+padding: 0px;
+/* cursor:url('http://www.rw-designer.com/cursor-view/15356.png'),default; */
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(HelveticaNeue.otf);
+}
+
+li {
+    list-style-type: none;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+
+a {
+	color:black !important;
+    text-decoration: none !important;
+    display: inline-block;
+    border-bottom: 3px solid red;    
+    margin-right: 39px; 
+    width: 0px;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+
+a:hover {
+    color:black !important;
+	text-decoration: none !important;
+	-webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+    border-bottom: 3px solid red;
+    width: 120px;
+    margin-right: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################    Navigation Bar       ####################### */
+
+#topPad{
+height:40px;
+}
+
+#navOne{
+height:80px;
+background-color:white;
+opacity:0.9;
+}
+
+#navThree{
+}
+
+#home, #gallery, #artists, #history, #contact, #about, #navThree{
+background-color:white;
+height:40px;
+font-size:23px;
+}
+
+
+#home, #gallery, #history, #about{
+width:10%; 
+padding-top: 5px;
+float:right;
+}
+
+
+#dream{
+float:left;
+width:10%; 
+padding-top: 10px;
+font-size:23px;
+padding-top: 5px;
+}
+
+#dream:hover{
+-webkit-transition: 1.5s ease;
+transition: 3.5s ease;
+color:red !important;
+}
+
+#home{
+
+margin: 0 auto; 
+}
+
+#gallery{
+margin: 0 auto;
+}
+
+
+#history{
+margin: 0 auto;
+}
+
+
+#about{
+margin: 0 auto;
+}
+
+/*####################################################################### */
+/*###################    Slider Div       ############################### */
+
+#sliderDiv{
+background-color:yellow;
+width:60%;
+}
+
+#slider1_container{
+border-style:solid;
+border-width:3px;
+border-color:white;
+}
+
+/*####################################################################### */
+/*###################    Bottom Div       ############################### */
+
+#slideoutDiv{
+background-color:black;
+height:50px;
+margin:0px;
+padding:0px;
+}
+
+#slideoutContainer{
+ margin-left: auto !important;
+ margin-right: auto !important;
+ display:block !important;
+ width:100%;
+ background-color:black;
+ margin:0px;
+ padding:0px;
+}
+
+#dropButton{
+margin: 0 auto;
+display: block;
+margin-top:20px;
+
+}
+
+#botLeftDiv, #botInsideDiv, #botRightDiv{
+display:none;
+
+}
+
+#botLeftDiv{
+float:left;
+/* background-color:orange; */
+background-color:black;
+height:800px;
+width:550px;
+margin: 0 auto;
+}
+
+#botInsideDiv{
+height:800px;
+width:550px;
+/* background-color:blue; */
+background-color:black;
+float:left;
+margin: 0 auto;
+}
+
+#botRightDiv{
+float:left;
+/* background-color:green; */
+background-color:black;
+height:800px;
+width:550px;
+margin: 0 auto;
+}
+
+#medieval{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+
+#renaissance{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+#modern{
+border-style:solid;
+border-width: 3px;
+border-color: white;
+height: 500px;
+width: 450px;
+margin:0 auto;
+margin-top:15px;
+text-align: justify;
+}
+
+#chooseStyle{
+
+}
+
+#styleText{
+display:block;
+color:white;
+font-size:30px;
+text-align: center;
+font-style:underline;
+font-family: HelveticaNeue;
+}
+
+.styleTextHidden{
+visibility: hidden;
+color:white;
+font-size:30px;
+text-align: center;
+font-style:underline;
+font-family: HelveticaNeue;
+}
+
+
+.bottomPics{
+opacity:0.9;
+display: block;
+margin-left: auto ;
+margin-right: auto ;
+}
+
+.bottomText{
+color:white;
+text-align: justify;
+}
+
+.leftPad{
+height:100%;
+width:30px;
+float:left;
+}
+
+.rightPad{
+height:100%;
+width:30px;
+float:right;
+}
+
+/*####################################################################### */
+/*###################     Bottom Bar Div       ########################## */
+
+
+#bottomBar{
+width:100%;
+background-color:gray;
+height:50px;
+display:block;
+}
+
+.bottomh1{
+padding-bottom:10px;
+text-align:center;
+color:white;
+font-weight:bold;
+}
+
+
+/*##############################################*/
+/*################### About Page ###############*/
+
+
+#solaire{
+position:fixed;
+width:100%;
+z-index:-1;
+}
+
+#test{
+height:2000;
+
+}
+
+#map-canvas {
+width: 500px;
+height: 400px;
+}
+
+#socialMedia{
+width:100%;
+background-color:white;
+opacity:0.9;
+height:60px;
+
+
+}
+
+#aboutLeft{
+height:300px;
+width: 70%;
+background-color:gray;
+float:right;
+margin-right:50px;
+margin-top:30px;
+}
+
+#aboutRight{
+height:300px;
+width: 70%;
+background-color:gray;
+float:left;
+margin-left:50px;
+margin-top:30px;
+}
+
+#aboutUs{
+height:450px;
+width:100%;
+background-color:black;
+
+}
+
+#aboutTitle{
+padding-top:20px;
+margin-top:20px;
+}
+
+.galleryImg{
+width:100%;
+height:100%;
+border-style:solid;
+border-width: 3px;
+border-color: white;
+}
+
+#aboutLPad{
+height:100%;
+width:150px;
+float:left;
+}
+
+#aboutRPad{
+height:100%;
+width:150px;
+float:right;
+
+}
+
+.socialImg{
+float:right;
+padding-left:0px;
+padding-right:5px;
+}
+
+.social-slide-fb {
+	background-image: url('img/test/fbh.png');
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-fb:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*####################################################################### */
+/*###################     Contact Style       ########################## */
+
+
+#mobilecontact, #messagecontact, #skypecontact, #plancontact, #twittercontact{
+
+padding-left:5px;
+padding-right:5px;
+}
+
+
+
+#topContact{
+
+background:black;
+height:250px;
+display:block;
+margin:0 auto;
+
+}
+
+#mobilecontact{
+
+float:left;
+
+}
+
+#messagecontact{
+
+float:left;
+
+}
+
+#skypecontact{
+
+float:left;
+
+}
+
+#plancontact{
+
+float:left;
+
+}
+
+#twittercontact{
+
+float:left;
+
+}
+
+
+#contactKappa{
+
+background:black;
+height:50px;
+display:block;
+margin:0 auto;
+
+}
+
+#kappah1{
+
+margin:0 auto;
+display:block;
+text-align:center;
+color:white;
+
+}
+
+#map-canvas{
+padding-top:25px;
+margin: 0 auto;
+border:solid 5px;
+border-color: white;
+}
+
+#spacemaker{
+height:40px;
+background:black;
+}
+
+#findMap{
+display:block;
+padding-bottom:10px;
+text-align:center;
+color:white;
+opacity:0.5;
+}
+/*
+#map-canvas{
+width:600px;
+}
+*/

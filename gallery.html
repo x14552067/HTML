@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dreamagine Gallery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- ############### Slideout Div at bottom ####################### -->
+		 <script type="text/javascript" src="js/kappa.js"></script>
+		 
+	<!-- ################################################################ -->
+	<!-- ############### On hover JavaScript ############################ -->
+	<script type="text/javascript" src="js/hovereffect.js"></script>
+	
+	<!-- ################################################################ -->
+	<!-- ################################################################ -->
+	
+	<link rel="stylesheet" href="css/arthref.css">
+
+	<!-- ################# SLIDER JQUERY ##################################### -->
+	
+	<!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+	<!-- ############### External Javascript we made for the slider script### -->
+	<script type="text/javascript" src="js/slider.js"></script>
+	
+	
+  </head>
+  <body>
+	
+  <div class="container-fluid">
+	<div class="row">
+		<div id="navOne" class="col-md-12">
+		<!-- <div id="topPad"> </div> -->
+		<div><p id="dream">Dreamagine ★</p>	</div>
+		<ul> 		
+		
+		<li id="about"><a href="about.html"><span class="textCol">About </span></a> </li>		
+		<li id="contact"><a href="contact.html"><span class="textCol"> Contact </span></a> </li>
+		<li id="gallery"> <a href="gallery.html"><span class="textCol"> Gallery </span></a></li>	
+		<li id="home"> <a href="index.html"><span class="textCol">Home </span></a></li>
+		</ul> 
+		</div>
+	</div>
+</div>
+	
+	
+	<script>
+	
+		var konamiCodeArray = [],
+			konamiCodeKey = '38,38,40,40,37,39,37,39,66,65';
+		$(document).keydown(function(e) {
+			konamiCodeArray.push(e.keyCode);
+			if (konamiCodeArray.toString().indexOf(konamiCodeKey) >= 0) {
+				$('#konami').fadeToggle(300);
+				konamiCodeArray = [];
+			}
+		});
+	
+	</script>
+	
+	<div id="konami" style="display:none; height: 900px; width:100%;">
+	<div id="konamiKappaCont">
+	<img src="img/artists/samkappa.png" id="konamiKappa" style="float:left;" alt="KAPPPPPAAAAAAAAAAAAAAA">
+	</div>
+	<div id="konamiText" style="float:left; margin-top:100px; height:100%; width:300px;">
+	<p style="font-size:100px; color:white;"> Twitter bootstrap ducking SUCKS </p>
+	</div>
+	</div>
+
+	
+    <!-- Beginning of main slider -->
+    <div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+  
+		<!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        
+		<!-- Slides Container -->
+        <div u="slides" style="cursor: pointer; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 500px; overflow: hidden;">
+            <div>
+                <img u="image" src="img/mainslider/spironman.jpg" />
+                <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="3000" d3="500" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px;">
+                
+				</div>
+                <div u="caption" t="RTT|2" r="-75%" du="1600" d="2500" t2="NO" style="position: absolute; width: 470px; height: 220px; top: 120px; left: 650px;">
+                
+				</div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;"> Dan Kelly
+                </div>
+                 <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div> 
+            </div>
+            <div>
+                <img u="image" src="img/mainslider/fantasyvill.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Peter File
+                </div>
+                 <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/mainslider/samcogiemspaintpro.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Sammie Cogie
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>
+			
+			<div>
+                <img u="image" src="img/mainslider/spimage.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Kappa Chino
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>
+			
+			<div>
+                <img u="image" src="img/mainslider/fantasyforest.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Richard Johnson
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>
+			
+			<div>
+                <img u="image" src="img/mainslider/scifi.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Glenn Connell
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>
+			
+			<div>
+                <img u="image" src="img/mainslider/scifi2.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Eric Shaun
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>			
+			
+			<div>
+                <img u="image" src="img/mainslider/fantasydragon.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Nikolai Cagious
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                </div>
+            </div>			
+			
+			
+        </div>
+              
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+
+        <!-- Arrow Navigator Skin Begin -->
+        
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">javascript</a>
+    </div>
+    <!-- END OF MAIN SLIDER -->	
+	
+	
+  <div class="container-fluid">
+	<div class="row">
+		
+		<div class="col-md-3">
+				
+				<div id="artistOne"> 
+			
+					<div id="a1">
+						<img src="img/botImg/steampunk.png" alt="A picture denoting the style of the artist" class="artistType">
+						<h1 class="artistText"> Dan Kelly </h1>
+						<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+					
+					</div>
+					
+				</div>
+	
+		</div>
+		
+		<div class="col-md-3">
+				
+				
+				<div id="artistTwo"> 
+				
+				<div id="a2"> 		
+						
+						<img src="img/botImg/monster.png" alt="A picture denoting the style of the artist" class="artistType">
+						<h1 class="artistText"> Peter File </h1>
+						<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									
+				</div>
+				
+				</div>
+	
+		</div>
+		
+		<div class="col-md-3">
+				
+				<div id="artistThree"> 
+			
+				<div id="a3">
+				
+					<img src="img/botImg/monster.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Sammie Cogie </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+				</div>
+				
+				</div>
+		</div>
+		
+		<div class="col-md-3">
+				<div id="artistFour"> 
+			
+				<div id="a4">
+				
+					<img src="img/botImg/steampunk.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Kappa Chino </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+				</div>
+				
+				</div>
+		</div>
+		
+		
+		
+	</div>
+	
+	<div class="row">
+	
+	
+		
+		<div class="col-md-3">
+				<div id="artistFive"> 
+			
+				<div id="a5">
+
+					<img src="img/botImg/monster.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Richard Johnson </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									
+				</div>
+				
+				</div>
+		</div>
+		
+		<div class="col-md-3">
+				<div id="artistSix"> 
+			
+				<div id="a6">
+				
+					<img src="img/botImg/rocket.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Glenn Connell </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+				</div>
+				
+				</div>
+		</div>
+		
+		<div class="col-md-3">
+				<div id="artistSeven"> 
+			
+				<div id="a7">
+
+					<img src="img/botImg/rocket.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Eric Shaun </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+									
+
+				</div>
+				
+				</div>
+		</div>
+		
+		<div class="col-md-3">
+				<div id="artistEight"> 
+			
+				<div id="a8">
+				
+					<img src="img/botImg/monster.png" alt="A picture denoting the style of the artist" class="artistType">
+					<h1 class="artistText"> Nikolai Cagious </h1>
+					<p class="artistText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						
+				
+				</div>
+				
+				</div>
+		</div>
+		
+	
+	</div>
+	<div class="row">
+			<div class="col-md-12" style="padding-left: 0px !important; padding-top:20px!important;">
+			
+				<div id="likeSite">		
+
+					<h1 id="wantSum"> Like what you see? </h1>
+					<h2 class="indexDesc"> Click the heart to find out more </h2>
+					
+						<div class="selectorClass" id="socialBtn">
+						<p class="demo">
+						<a href="#" class="btn followSelector" id="socialLinks"></a>
+						</p>
+						</div>
+			
+			
+				</div>
+			
+			
+			</div>
+	</div>
+	
+</div>
+	
+	
+	
+	
+	
+	
+	
+  
+  </body>
+</html>
